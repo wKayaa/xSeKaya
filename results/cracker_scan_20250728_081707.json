@@ -1,0 +1,45 @@
+{
+  "scan_info": {
+    "timestamp": 1753690627.7294233,
+    "targets": [
+      "https://httpbin.org"
+    ],
+    "scan_type": "quick",
+    "duration": 6.119398593902588
+  },
+  "summary": {
+    "timestamp": "2025-07-28T08:17:07.729438",
+    "total_targets": 1,
+    "total_vulnerabilities": 0,
+    "total_secrets": 0,
+    "total_valid_credentials": 0,
+    "duration": 6.119398593902588,
+    "vulnerability_types": {},
+    "valid_credentials_by_service": {
+      "smtp": 0,
+      "aws": 0,
+      "sendgrid": 0,
+      "mailgun": 0,
+      "twilio": 0,
+      "stripe": 0
+    }
+  },
+  "vulnerabilities": [],
+  "extracted_secrets": {},
+  "valid_credentials": {
+    "smtp": [],
+    "aws": [],
+    "sendgrid": [],
+    "mailgun": [],
+    "twilio": [],
+    "stripe": []
+  },
+  "statistics": {
+    "start_time": 1753690621.6100242,
+    "end_time": 1753690627.7294228,
+    "targets_scanned": 1,
+    "vulnerabilities_found": 0,
+    "secrets_extracted": 0,
+    "valid_credentials": 0
+  }
+}
