@@ -1,0 +1,1 @@
+# Core modules for Cracker Scanner 2025
