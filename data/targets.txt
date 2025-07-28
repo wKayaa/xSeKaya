@@ -1,0 +1,34 @@
+# Sample targets for testing Cracker Scanner 2025
+# Format: one target per line
+# Supports IPs, domains, and URLs
+# Lines starting with # are comments
+
+# Example domains (for testing - replace with your authorized targets)
+example.com
+httpbin.org
+jsonplaceholder.typicode.com
+
+# Example IP addresses
+127.0.0.1
+192.168.1.1
+10.0.0.1
+
+# Example URLs with schemes
+https://example.com
+http://httpbin.org
+https://jsonplaceholder.typicode.com
+
+# CIDR ranges (for authorized network scanning)
+# 192.168.1.0/24
+# 10.0.0.0/24
+# 172.16.0.0/24
+
+# Local development targets
+localhost:8000
+localhost:3000
+localhost:8080
+
+# Add your authorized targets below:
+# yoursite.com
+# test.yoursite.com
+# staging.yoursite.com

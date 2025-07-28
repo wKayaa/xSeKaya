@@ -1,0 +1,136 @@
+{
+  "scanner": {
+    "timeout": 10,
+    "max_retries": 3,
+    "max_workers": 100,
+    "verify_ssl": false,
+    "rate_limit": 10,
+    "user_agent_rotation": true,
+    "follow_redirects": true,
+    "max_redirects": 3
+  },
+  "network": {
+    "proxy": null,
+    "proxy_rotation": false,
+    "proxy_list": [],
+    "headers": {
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "Accept-Language": "en-US,en;q=0.5",
+      "Accept-Encoding": "gzip, deflate",
+      "Connection": "keep-alive"
+    }
+  },
+  "scanning": {
+    "quick_scan_paths": [
+      ".env",
+      ".env.backup",
+      "vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php",
+      "_ignition/execute-solution",
+      "telescope/requests",
+      "storage/logs/laravel.log",
+      "config/app.php",
+      "config/database.php"
+    ],
+    "skip_extensions": [
+      ".jpg", ".jpeg", ".png", ".gif", ".bmp", ".ico",
+      ".mp3", ".mp4", ".avi", ".mov", ".wmv",
+      ".pdf", ".doc", ".docx", ".xls", ".xlsx",
+      ".zip", ".rar", ".tar", ".gz"
+    ],
+    "interesting_status_codes": [200, 403, 500, 503],
+    "min_content_length": 10,
+    "max_content_length": 1048576
+  },
+  "extraction": {
+    "enabled": true,
+    "extract_from_headers": true,
+    "extract_from_content": true,
+    "max_extraction_size": 102400,
+    "secret_patterns": {
+      "smtp": true,
+      "aws": true,
+      "sendgrid": true,
+      "mailgun": true,
+      "twilio": true,
+      "stripe": true,
+      "database": true,
+      "api_keys": true,
+      "tokens": true
+    }
+  },
+  "credential_checking": {
+    "enabled": true,
+    "timeout": 15,
+    "check_smtp": true,
+    "check_aws": true,
+    "check_sendgrid": true,
+    "check_mailgun": true,
+    "check_twilio": true,
+    "check_stripe": true,
+    "max_concurrent_checks": 10
+  },
+  "output": {
+    "directory": "results",
+    "formats": ["json", "txt", "csv"],
+    "include_content": false,
+    "include_headers": true,
+    "separate_secrets": true,
+    "timestamp_files": true
+  },
+  "notifications": {
+    "telegram": {
+      "enabled": false,
+      "bot_token": "",
+      "chat_id": "",
+      "notify_on_start": true,
+      "notify_on_vulnerability": true,
+      "notify_on_credentials": true,
+      "notify_on_complete": true,
+      "notify_on_error": true
+    },
+    "webhook": {
+      "enabled": false,
+      "url": "",
+      "timeout": 10,
+      "notify_on_vulnerability": true,
+      "notify_on_complete": true
+    },
+    "slack": {
+      "enabled": false,
+      "webhook_url": "",
+      "notify_on_complete": true,
+      "notify_on_critical": true
+    }
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "cracker_scanner.log",
+    "max_size": "10MB",
+    "backup_count": 5,
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  },
+  "security": {
+    "max_targets": 10000,
+    "max_paths_per_target": 1000,
+    "rate_limit_per_target": 10,
+    "respect_robots_txt": false,
+    "skip_honeypots": true
+  },
+  "performance": {
+    "memory_limit": "1GB",
+    "disk_space_limit": "5GB",
+    "max_scan_duration": 3600,
+    "cleanup_temp_files": true
+  },
+  "targeting": {
+    "cidr_expansion_limit": 1024,
+    "auto_detect_laravel": true,
+    "skip_non_laravel": false,
+    "priority_targets": [],
+    "excluded_targets": [
+      "127.0.0.1",
+      "localhost",
+      "0.0.0.0"
+    ]
+  }
+}

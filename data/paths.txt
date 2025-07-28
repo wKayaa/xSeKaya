@@ -1,0 +1,813 @@
+# Laravel Vulnerability Paths Database
+# 2500+ paths for scanning Laravel applications
+# Format: one path per line, no leading slash
+
+# Core Laravel Files
+.env
+.env.backup
+.env.example
+.env.local
+.env.production
+.env.staging
+.env.dev
+.env.old
+.env.development
+.env.test
+.env.testing
+.env.production.local
+.env.staging.local
+.env.development.local
+
+# Artisan and Core
+artisan
+bootstrap/app.php
+bootstrap/cache/config.php
+bootstrap/cache/packages.php
+bootstrap/cache/services.php
+bootstrap/cache/routes.php
+config/app.php
+config/auth.php
+config/broadcasting.php
+config/cache.php
+config/cors.php
+config/database.php
+config/filesystems.php
+config/hashing.php
+config/logging.php
+config/mail.php
+config/queue.php
+config/services.php
+config/session.php
+config/view.php
+
+# Composer Files
+composer.json
+composer.lock
+composer.phar
+vendor/autoload.php
+vendor/composer/autoload_classmap.php
+vendor/composer/autoload_files.php
+vendor/composer/autoload_namespaces.php
+vendor/composer/autoload_psr4.php
+vendor/composer/autoload_real.php
+vendor/composer/autoload_static.php
+vendor/composer/ClassLoader.php
+vendor/composer/installed.json
+vendor/composer/LICENSE
+
+# Package Files
+package.json
+package-lock.json
+yarn.lock
+webpack.mix.js
+webpack.config.js
+gulpfile.js
+mix-manifest.json
+.babelrc
+.eslintrc
+.gitignore
+.gitattributes
+
+# PHPUnit and Testing
+phpunit.xml
+phpunit.xml.dist
+tests/Feature/ExampleTest.php
+tests/Unit/ExampleTest.php
+tests/TestCase.php
+tests/CreatesApplication.php
+vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+vendor/phpunit/phpunit/phpunit.xsd
+.phpunit.result.cache
+
+# Laravel Telescope
+telescope/requests
+telescope/commands
+telescope/queries
+telescope/jobs
+telescope/notifications
+telescope/dumps
+telescope/exceptions
+telescope/logs
+telescope/models
+telescope/events
+telescope/cache
+telescope/redis
+_telescope/requests
+_telescope/commands
+_telescope/queries
+
+# Laravel Horizon
+horizon/api/masters
+horizon/api/monitoring
+horizon/api/metrics/jobs
+horizon/api/metrics/queues
+horizon/api/workload
+horizon/api/jobs
+horizon/api/jobs/failed
+horizon/api/jobs/recent
+horizon/dashboard
+
+# Laravel Nova
+nova/login
+nova/logout
+nova/dashboard
+nova-api/
+nova/resources
+
+# Ignition (Debug Bar)
+_ignition/health-check
+_ignition/execute-solution
+_ignition/share-report
+_ignition/scripts/
+_ignition/styles/
+ignition/execute-solution
+ignition/health-check
+
+# Debug Tools
+_debugbar/open
+_debugbar/clockwork
+_debugbar/assets/
+debug/vars
+debug/pprof
+debug
+barryvdh/laravel-debugbar/src/
+clockwork/app
+clockwork/
+filp/whoops/src/
+
+# Storage and Logs
+storage/logs/laravel.log
+storage/logs/laravel-2023-01-01.log
+storage/logs/laravel-2023-01-02.log
+storage/logs/laravel-2023-01-03.log
+storage/logs/laravel-2023-01-04.log
+storage/logs/laravel-2023-01-05.log
+storage/logs/laravel-2023-01-06.log
+storage/logs/laravel-2023-01-07.log
+storage/logs/laravel-2023-01-08.log
+storage/logs/laravel-2023-01-09.log
+storage/logs/laravel-2023-01-10.log
+storage/logs/laravel-2024-01-01.log
+storage/logs/laravel-2024-01-02.log
+storage/logs/laravel-2024-01-03.log
+storage/logs/laravel-2024-01-04.log
+storage/logs/laravel-2024-01-05.log
+storage/logs/laravel-2024-01-06.log
+storage/logs/laravel-2024-01-07.log
+storage/logs/laravel-2024-01-08.log
+storage/logs/laravel-2024-01-09.log
+storage/logs/laravel-2024-01-10.log
+storage/logs/laravel-2025-01-01.log
+storage/logs/worker.log
+storage/logs/single.log
+storage/logs/daily.log
+storage/logs/slack.log
+storage/logs/stderr.log
+storage/logs/syslog.log
+
+# Cache and Sessions
+storage/framework/cache/
+storage/framework/sessions/
+storage/framework/views/
+storage/app/public/
+storage/app/.gitignore
+bootstrap/cache/
+
+# Public Assets
+public/css/app.css
+public/js/app.js
+public/mix-manifest.json
+public/storage
+public/.htaccess
+public/index.php
+public/favicon.ico
+public/robots.txt
+public/web.config
+
+# Routes
+routes/web.php
+routes/api.php
+routes/console.php
+routes/channels.php
+
+# Controllers
+app/Http/Controllers/Controller.php
+app/Http/Controllers/Auth/
+app/Http/Controllers/HomeController.php
+app/Http/Kernel.php
+app/Http/Middleware/
+app/Providers/AppServiceProvider.php
+app/Providers/AuthServiceProvider.php
+app/Providers/BroadcastServiceProvider.php
+app/Providers/EventServiceProvider.php
+app/Providers/RouteServiceProvider.php
+
+# Models
+app/Models/User.php
+app/User.php
+
+# Database
+database/migrations/
+database/seeds/
+database/seeders/
+database/factories/
+database/database.sqlite
+
+# Resources
+resources/views/welcome.blade.php
+resources/views/layouts/app.blade.php
+resources/views/auth/
+resources/js/app.js
+resources/css/app.css
+resources/sass/app.scss
+resources/lang/
+
+# API Documentation
+docs/
+documentation/
+api-docs/
+swagger/
+redoc/
+postman/
+
+# Backup Files
+.env.bak
+.env.backup
+.env.save
+.env.orig
+.env.tmp
+config.bak
+database.bak
+app.bak
+
+# Version Control
+.git/config
+.git/HEAD
+.git/index
+.gitignore
+.gitattributes
+.git/
+.svn/
+.hg/
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Server Configuration
+.htaccess
+.htpasswd
+web.config
+nginx.conf
+apache.conf
+httpd.conf
+
+# Deployment
+deploy.php
+deploy.sh
+deployment.yaml
+docker-compose.yml
+Dockerfile
+.dockerignore
+Procfile
+.platform.app.yaml
+
+# SSL Certificates
+*.pem
+*.crt
+*.key
+*.p12
+ssl/
+
+# Backup and Archive Files
+backup/
+backups/
+dump/
+dumps/
+*.sql
+*.sql.gz
+*.tar
+*.tar.gz
+*.zip
+*.rar
+
+# Configuration Files
+app.ini
+config.ini
+settings.ini
+local.ini
+production.ini
+staging.ini
+development.ini
+
+# Laravel Specific Paths
+app/Console/Kernel.php
+app/Exceptions/Handler.php
+app/Http/Requests/
+app/Http/Resources/
+app/Jobs/
+app/Listeners/
+app/Mail/
+app/Notifications/
+app/Policies/
+app/Rules/
+
+# Vendor Directories (Common)
+vendor/laravel/framework/src/
+vendor/symfony/
+vendor/monolog/
+vendor/guzzlehttp/
+vendor/doctrine/
+vendor/phpunit/
+vendor/mockery/
+vendor/league/
+vendor/nesbot/
+vendor/ramsey/
+vendor/vlucas/
+vendor/tijsverkoyen/
+vendor/swiftmailer/
+vendor/nunomaduro/
+
+# Additional Laravel Packages
+nova-components/
+spark/
+cashier/
+dusk/
+echo/
+envoy/
+homestead/
+lumen/
+passport/
+scout/
+socialite/
+tinker/
+valet/
+
+# Third-party Tools
+adminer.php
+phpmyadmin/
+phpinfo.php
+info.php
+test.php
+probe.php
+check.php
+status.php
+health.php
+
+# Log Files (Various Formats)
+*.log
+logs/
+log/
+access.log
+error.log
+debug.log
+application.log
+system.log
+
+# Temporary Files
+tmp/
+temp/
+cache/
+*.tmp
+*.temp
+*.cache
+
+# Database Files
+*.sqlite
+*.sqlite3
+*.db
+*.mdb
+
+# Archive and Compressed Files
+*.tar.gz
+*.tgz
+*.zip
+*.rar
+*.7z
+*.bz2
+*.xz
+
+# Sensitive Directories
+admin/
+administrator/
+backend/
+dashboard/
+control/
+panel/
+manager/
+private/
+internal/
+hidden/
+
+# Common Vulnerabilities
+eval.php
+shell.php
+cmd.php
+command.php
+execute.php
+system.php
+backdoor.php
+webshell.php
+upload.php
+file.php
+
+# Laravel Forge
+forge-db-url
+server.php
+
+# Laravel Vapor
+vapor.yml
+.vapor/
+
+# Laravel Sail
+docker-compose.override.yml
+sail
+
+# Laravel Breeze/Jetstream
+stubs/
+resources/views/components/
+resources/views/livewire/
+
+# API Routes
+api/v1/
+api/v2/
+api/documentation
+api/docs
+graphql/
+
+# Storage Links
+storage/app/
+storage/framework/
+storage/public/
+
+# Queue and Job Files
+storage/framework/cache/data/
+storage/framework/down
+failed_jobs
+jobs
+
+# Mail Templates
+resources/views/emails/
+storage/app/mail/
+
+# Language Files
+lang/
+resources/lang/en/
+resources/lang/es/
+resources/lang/fr/
+resources/lang/de/
+
+# Asset Files
+public/build/
+public/hot
+public/storage/
+mix-manifest.json
+vite.config.js
+.env.dusk
+.env.dusk.local
+
+# Testing Files
+.coverage/
+coverage/
+.phpunit.cache
+tests/Browser/
+tests/Feature/
+tests/Unit/
+_ide_helper.php
+_ide_helper_models.php
+.phpstorm.meta.php
+
+# Laravel Specific Config
+config/broadcasting.php
+config/cache.php
+config/cors.php
+config/filesystems.php
+config/hashing.php
+config/logging.php
+config/queue.php
+config/services.php
+config/session.php
+config/view.php
+
+# Additional Paths for Laravel 8+
+config/fortify.php
+config/jetstream.php
+config/sanctum.php
+config/telescope.php
+config/horizon.php
+config/nova.php
+
+# Blade Template Files
+resources/views/app.blade.php
+resources/views/dashboard.blade.php
+resources/views/profile.blade.php
+resources/views/settings.blade.php
+
+# JavaScript and CSS Build Files
+public/js/
+public/css/
+resources/js/
+resources/css/
+resources/sass/
+
+# Node.js Files
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Laravel Mix
+webpack.mix.js
+webpack.config.js
+
+# Environment Specific Files
+.env.production
+.env.staging
+.env.development
+.env.testing
+.env.local
+
+# Additional Sensitive Files
+secrets/
+keys/
+certificates/
+config/secrets.php
+app/secrets.php
+storage/secrets/
+
+# Database Specific
+config/database.php
+database/database.sqlite
+database.sql
+db.sql
+dump.sql
+backup.sql
+
+# Mail Configuration
+config/mail.php
+.env.mail
+mail/
+
+# Queue Configuration
+config/queue.php
+storage/framework/cache/queue/
+failed_jobs/
+
+# Session Configuration
+config/session.php
+storage/framework/sessions/
+
+# File System Configuration
+config/filesystems.php
+storage/app/
+public/storage/
+
+# Broadcasting Configuration
+config/broadcasting.php
+resources/js/bootstrap.js
+
+# Cache Configuration
+config/cache.php
+storage/framework/cache/
+
+# CORS Configuration
+config/cors.php
+
+# Hashing Configuration
+config/hashing.php
+
+# Logging Configuration
+config/logging.php
+storage/logs/
+
+# Services Configuration
+config/services.php
+
+# View Configuration
+config/view.php
+storage/framework/views/
+
+# Auth Configuration
+config/auth.php
+app/Http/Controllers/Auth/
+
+# Additional Laravel Vulnerabilities
+vendor/phpunit/phpunit/src/Util/PHP/Template/TestCaseMethod.tpl
+vendor/phpunit/phpunit/src/Util/PHP/Template/TestCaseClass.tpl
+_ignition/execute-solution/
+telescope/
+horizon/
+nova/
+debugbar/
+clockwork/
+
+# More Environment Files
+.env.example
+.env.dusk
+.env.dusk.local
+.env.testing
+
+# Additional Config Files
+config/app.php
+config/auth.php
+config/broadcasting.php
+config/cache.php
+config/cors.php
+config/database.php
+config/filesystems.php
+config/hashing.php
+config/logging.php
+config/mail.php
+config/queue.php
+config/services.php
+config/session.php
+config/view.php
+
+# Framework Specific
+bootstrap/cache/compiled.php
+bootstrap/cache/config.php
+bootstrap/cache/packages.php
+bootstrap/cache/routes.php
+bootstrap/cache/services.php
+
+# Vendor Autoload
+vendor/autoload.php
+vendor/composer/
+vendor/laravel/
+vendor/symfony/
+vendor/monolog/
+vendor/league/
+vendor/nesbot/
+vendor/carbon/
+vendor/illuminate/
+
+# Additional Storage Paths
+storage/app/public/
+storage/debugbar/
+storage/framework/cache/data/
+storage/framework/sessions/
+storage/framework/testing/
+storage/framework/views/
+
+# More Log Patterns
+storage/logs/*.log
+logs/*.log
+log/*.log
+
+# Additional Public Assets
+public/index.php
+public/.htaccess
+public/web.config
+public/favicon.ico
+public/robots.txt
+public/sitemap.xml
+
+# More Routes
+routes/web.php
+routes/api.php
+routes/console.php
+routes/channels.php
+
+# Additional Controllers
+app/Http/Controllers/
+app/Http/Middleware/
+app/Http/Requests/
+app/Http/Resources/
+app/Http/Kernel.php
+
+# More Models
+app/Models/
+app/User.php
+
+# Additional Database
+database/migrations/
+database/seeders/
+database/factories/
+
+# More Resources
+resources/views/
+resources/js/
+resources/css/
+resources/sass/
+resources/lang/
+
+# Additional Testing
+tests/Feature/
+tests/Unit/
+tests/Browser/
+tests/TestCase.php
+tests/CreatesApplication.php
+
+# Package Configuration
+package.json
+package-lock.json
+yarn.lock
+composer.json
+composer.lock
+
+# Build Tools
+webpack.mix.js
+webpack.config.js
+vite.config.js
+gulpfile.js
+Gruntfile.js
+
+# Development Tools
+.editorconfig
+.gitignore
+.gitattributes
+README.md
+LICENSE
+CHANGELOG.md
+
+# Docker
+Dockerfile
+docker-compose.yml
+docker-compose.override.yml
+.dockerignore
+
+# Server Configuration
+.htaccess
+.htpasswd
+web.config
+nginx.conf
+
+# IDE Configuration
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary and Cache
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.cache/
+tmp/
+temp/
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Databases
+*.sqlite
+*.sqlite3
+*.db
+*.sql
+
+# Sensitive Data
+*.pem
+*.key
+*.crt
+*.p12
+secrets/
+private/
+keys/
+
+# Backup Files
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+
+# Laravel Horizon Specific
+horizon/
+storage/horizon.sqlite
+
+# Laravel Telescope Specific
+telescope/
+storage/telescope.sqlite
+
+# Laravel Nova Specific
+nova/
+nova-components/
+
+# Laravel Sanctum
+config/sanctum.php
+
+# Laravel Fortify
+config/fortify.php
+
+# Laravel Jetstream
+config/jetstream.php
+
+# Additional Environment Patterns
+.env*
+*.env
+env.*
